@@ -1,0 +1,26 @@
+train: '/home/wangqianlong/model/superAE-master/data/lcsts/save_key/lcsts.low.share.train0.pt'
+data: '/home/wangqianlong/model/superAE-master/data/lcsts/save_key/lcsts.low.share.valid_test.pt'
+log: '/home/wangqianlong/model/superAE-master/data/log/'
+epoch: 60
+batch_size: 512
+eval_batch_size: 256
+param_init: 0.1
+optim: 'adam'
+learning_rate: 0.001
+max_grad_norm: 10
+learning_rate_decay: 0.9
+start_decay_at: 30
+emb_size: 512
+hidden_size: 512
+num_layers: 3
+enc_num_layers: 3
+bidirectional: True
+dropout: 0.4
+max_tgt_len: 30
+eval_interval: 10000
+save_interval: 5000
+max_generator_batches: 64
+metric: ['rouge-1', 'rouge-2', 'rouge-L']
+shared_vocab: True
+att_act : 'tanh'
+beam_size: 5
