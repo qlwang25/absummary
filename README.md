@@ -1,3 +1,3 @@
 # absummary
 
-paper unpublished
+paper accepted but unpublished
